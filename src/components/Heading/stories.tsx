@@ -9,6 +9,6 @@ export default {
   }
 } as Meta<HeadingProps>
 
-export const Template: Story<HeadingProps> = (args) => {
+export const Default: Story<HeadingProps> = (args) => {
   return <Heading {...args} />
 }

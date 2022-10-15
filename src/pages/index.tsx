@@ -1,5 +1,5 @@
 import { Heading } from 'components/Heading'
 
-export function Home() {
+export default function Home() {
   return <Heading text="olá" />
 }
