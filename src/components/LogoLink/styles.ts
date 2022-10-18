@@ -7,9 +7,11 @@ export const Wrapper = styled.a`
     text-decoration: none;
     color: inherit;
     font-family: ${theme.font.family.default};
+    width: 200px;
 
     img {
-      max-height: 2rem;
+      max-height: 1.5rem;
+      margin: 0 auto;
     }
   `}
 `
