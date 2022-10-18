@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export interface MenuLinkProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   link: string
   newTab?: boolean
 }

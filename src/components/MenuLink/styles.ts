@@ -14,7 +14,7 @@ export const Wrapper = styled.a`
         content: '';
         position: absolute;
         display: block;
-        bottom: 0;
+        bottom: 0.3rem;
         left: 25%;
         width: 50%;
         height: 0.2rem;
