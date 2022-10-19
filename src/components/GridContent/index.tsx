@@ -11,7 +11,7 @@ export interface GridContentProps {
 const GridContent = ({ title, html }: GridContentProps) => (
   <SectionBackground>
     <S.Wrapper>
-      <Heading uppercase size="large">
+      <Heading uppercase size="huge">
         {title}
       </Heading>
       <S.Html>
