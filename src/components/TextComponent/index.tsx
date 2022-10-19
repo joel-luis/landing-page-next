@@ -1,11 +1,11 @@
 import * as S from './styles'
 
 export interface TextComponentProps {
-  children: React.ReactNode
+  children: string
 }
 
 const TextComponent = ({ children }: TextComponentProps) => (
-  <S.Wrapper>{children}</S.Wrapper>
+  <S.Wrapper dangerouslySetInnerHTML={{ __html: children }} />
 )
 
 export default TextComponent
