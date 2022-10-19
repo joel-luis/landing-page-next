@@ -7,7 +7,7 @@ export interface NavLinksProps {
 
 const NavLinks = ({ links }: NavLinksProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper aria-label="Main menu">
       {links.map(({ link, children, newTab }: MenuLinkProps) => (
         <MenuLink key={link} link={link} newTab={newTab}>
           {children}

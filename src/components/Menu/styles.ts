@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 import { Wrapper as SectionContainer } from 'components/SectionContainer/styles'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
+export const Wrapper = styled.div<{ menuVisible?: boolean }>`
+  ${({ theme, menuVisible }) => css`
     width: 100%;
     height: 100%;
     position: fixed;
@@ -18,6 +18,9 @@ export const Wrapper = styled.div`
 
     @media ${theme.media.lessThanMedium} {
       ${SectionContainer} {
+        visibility: ${menuVisible ? 'visible' : 'hidden'};
+        opacity: ${menuVisible ? '1' : '0'};
+        transition: all ${theme.transition.default};
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
@@ -38,6 +41,33 @@ export const MenuContainer = styled.div`
     @media ${theme.media.lessThanMedium} {
       flex-direction: column;
       justify-content: center;
+    }
+  `}
+`
+
+export const Button = styled.div`
+  ${({ theme }) => css`
+    z-index: 9;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 2rem;
+    cursor: pointer;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: ${theme.colors.black};
+    color: ${theme.colors.white};
+    border: none;
+
+    @media ${theme.media.lessThanMedium} {
+      display: flex;
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   `}
 `

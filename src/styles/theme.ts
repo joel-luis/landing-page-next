@@ -45,7 +45,7 @@ export default {
     xxlarge: '5.6rem'
   },
   transition: {
-    default: '0.3s ease-in-out',
+    default: '0.2s ease-in-out',
     fast: '0.1s ease-in-out'
   }
 } as const
