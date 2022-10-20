@@ -1,9 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Wrapper as HeadingContainer } from 'components/Heading/styles'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css``}
-`
+export const Wrapper = styled.div``
 
 export const Grid = styled.div`
   ${({ theme }) => css`
